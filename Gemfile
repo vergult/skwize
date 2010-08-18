@@ -6,6 +6,7 @@ gem 'rails', '3.0.0.rc'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'alphadecimal'
 
 # Use unicorn as the web server
 # gem 'unicorn'
