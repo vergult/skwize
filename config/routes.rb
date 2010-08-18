@@ -1,4 +1,7 @@
 Skwize::Application.routes.draw do
+  root  :to => "home#index"
+  
+  resources :links
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
