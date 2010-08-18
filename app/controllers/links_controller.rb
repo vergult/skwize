@@ -9,4 +9,15 @@ class LinksController < ApplicationController
       redirect_to root_path
     end
   end
+  
+  def redirect
+    begin
+      @link = Link.find(params[:link_reference].alphadecimal)
+    rescue
+      flash[:error] = "Not a valid url"
+      redirect_to root_path
+    else
+      redirect_to @link.address
+    end
+  end
 end

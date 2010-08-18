@@ -2,6 +2,8 @@ Skwize::Application.routes.draw do
   root  :to => "home#index"
   
   resources :links
+  
+  match ":link_reference" => "links#redirect"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
